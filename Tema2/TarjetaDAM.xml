@@ -1,0 +1,13 @@
+<?xml-stylesheet href="TarjetaDAM.css" type="text/css"?>
+<tarjetaDAM>
+    <recuadro>
+        <titulo>Tarjeta DAM</titulo>
+        <numero>9876 5432 1675 7562</numero>
+        <bloque>
+            <chip></chip>
+            <banco>UWU BANK</banco>
+        </bloque>
+        <nombre>Pedro González López</nombre>
+        <cuadrado></cuadrado>
+</recuadro>
+</tarjetaDAM>
