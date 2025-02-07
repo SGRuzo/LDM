@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: "Pixelify Sans", sans-serif;
+    
+}
+
+table{
+    border-collapse: collapse;
+}
+th, td {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    font-size: 30px;
+}
+
+th {
+    background-color: #fff;
+}
+
+
+img {
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+    image-rendering: pixelated;
+}
+
+/* Alternar colores del tablero */
+tr:nth-child(odd) td:nth-child(even),
+tr:nth-child(even) td:nth-child(odd) {
+    background-color: black; 
+}
+
+tr:nth-child(odd) td:nth-child(odd),
+tr:nth-child(even) td:nth-child(even) {
+    background-color: #daccb4; 
+}
