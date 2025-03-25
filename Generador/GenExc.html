@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExcusaGen - Generador de excusas creativas</title>
+    <link rel="stylesheet" href="GenExc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Generador<span>Excusas</span></h1>
+            <p class="tagline">Tu generador de excusas improbables pero técnicamente posibles</p>
+        </header>
+        
+            <div class="slot-machine">
+                <div class="slot-container">
+                    <div class="slot-title">Quién</div>
+                    <div class="slot" id="who-slot">
+                        <div class="slot-items"></div>
+                    </div>
+                </div>
+                
+                <div class="slot-container">
+                    <div class="slot-title">Cómo</div>
+                    <div class="slot" id="how-slot">
+                        <div class="slot-items"></div>
+                    </div>
+                </div>
+                
+                <div class="slot-container">
+                    <div class="slot-title">Cuándo</div>
+                    <div class="slot" id="when-slot">
+                        <div class="slot-items"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <button id="generate-btn">Generar Excusa</button>
+            
+            <div class="final-excuse">
+                <div class="excuse-display">
+                    <p id="excuse-text">Haz clic en el botón para generar tu excusa</p>
+                </div>
+            </div>
+            
+            
+    </div>
+
+    <script src="GenExc.js"></script>
+</body>
+</html>
