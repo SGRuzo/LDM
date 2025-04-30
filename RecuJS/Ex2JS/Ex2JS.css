@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #ff0000;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.tarjeta {
+    background-color: #333;
+    border-radius: 15px;
+    padding: 25px;
+    width: 350px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border: 2px solid #ff0000;
+}
+
+.tarjeta h2 {
+    color: #ff0000;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.tarjeta .frase {
+    font-style: italic;
+    margin: 20px 0;
+    color: #ccc;
+    min-height: 50px;
+}
+
+.imaxe-negativa {
+    width: 100%;
+    height: 200px;
+    filter: invert(100%);
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 2px solid #666;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #cc0000;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+}

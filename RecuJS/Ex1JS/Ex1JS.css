@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f8ff;
+}
+h1 {
+    color: black;
+    text-align: center;
+}
+
+.recurso {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+button:hover {
+    transform: scale(1.05);
+}
+#btnClick {
+    background-color: #a80802;
+    color: white;
+}
+#btn1 {
+    background-color: #daa107;
+    color: white;
+}
+#btn2 {
+    background-color: #228b22;
+    color: white;
+}
+#instrucciones {
+    background-color: #e4fca4;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    min-height: 70px;
+}
+.contador {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px 0;
+}
