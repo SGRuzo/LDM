@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif; /* Fuente principal */
+    background-color: #f5f5f5; /* Color de fondo */
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 20px; /* Espaciado interno */
+    display: flex; /* Usa Flexbox para centrar */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+.contenedor {
+    background-color: white; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%; /* Ancho completo */
+    max-width: 900px; /* Ancho máximo */
+}
+
+h1 {
+    color: #2c3e50; /* Color oscuro */
+    text-align: center; /* Centrado */
+    margin-bottom: 30px; /* Espacio inferior */
+}
+
+.juego-container {
+    display: flex; /* Usa Flexbox para alinear jugadores */
+    justify-content: space-between; /* Distribuye espacio entre jugadores */
+    align-items: center; /* Centra verticalmente */
+    gap: 40px; /* Espacio entre jugadores */
+}
+
+.jugador {
+    flex: 1; /* Ocupa espacio disponible */
+    display: flex;
+    flex-direction: column; /* Apila elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+}
+
+.jugador h2 {
+    margin-bottom: 15px; /* Espacio inferior */
+    color: #333; /* Color de texto */
+}
+
+.opciones {
+    display: grid; /* Usa CSS Grid */
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-rows: auto auto; /* Filas automáticas */
+    gap: 15px; /* Espacio entre elementos */
+    justify-items: center; /* Centra elementos horizontalmente */
+    width: 100%; /* Ancho completo */
+}
+
+.opcion-sola {
+    grid-column: 1 / span 2; /* Ocupa 2 columnas */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+}
+
+.opciones img {
+    width: 80px; /* Ancho fijo */
+    height: 80px; /* Alto fijo */
+    cursor: pointer; /* Cambia cursor a "mano" */
+    transition: transform 0.2s; /* Animación al hacer hover */
+    border: 2px solid transparent; /* Borde transparente */
+    object-fit: contain; /* Ajusta la imagen sin deformarla */
+}
+
+.opciones img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.opciones img.seleccionada {
+    border-color: #3498db; /* Borde azul al seleccionar */
+    background-color: #e3f2fd; /* Fondo azul claro */
+}
+
+.seleccion {
+    font-weight: bold; /* Texto en negrita */
+    text-align: center; /* Centrado */
+    margin-top: 15px; /* Espacio superior */
+    min-height: 24px; /* Altura mínima para evitar saltos */
+}
+
+#botonJugar {
+    padding: 12px 30px; /* Espaciado interno */
+    background-color: #3498db; /* Color azul */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 18px; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor de "mano" */
+    margin: 0 20px; /* Margen horizontal */
+    align-self: center; /* Centrado verticalmente */
+}
+
+#botonJugar:hover {
+    background-color: #2980b9; /* Color más oscuro al pasar el mouse */
+}
+
+#botonJugar:disabled {
+    background-color: #cccccc; /* Color gris cuando está desactivado */
+    cursor: not-allowed; /* Cursor de "no permitido" */
+}
+
+.resultado {
+    margin-top: 30px; /* Espacio superior */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #f0f8ff; /* Fondo azul claro */
+    text-align: center; /* Texto centrado */
+}
+
+#textoResultado {
+    font-size: 20px; /* Tamaño grande */
+    font-weight: bold; /* Negrita */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+#explicacion {
+    font-style: italic; /* Texto en cursiva */
+    color: #555; /* Color gris oscuro */
+    font-size: 16px; /* Tamaño estándar */
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel, Tijeras, Lagarto, Spock</title>
+    <link rel="stylesheet" href="PPTLS.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Piedra, Papel, Tijeras, Lagarto, Spock</h1>
+        
+        <div class="juego-container">
+            <!-- Jugador 1 -->
+            <div class="jugador" id="jugador1">
+                <h2>Jugador 1</h2>
+                <div class="opciones">
+                    <img src="pedrapapeltesoiraslagartospock/pedra.png" alt="Piedra" data-opcion="pedra">
+                    <img src="pedrapapeltesoiraslagartospock/papel.png" alt="Papel" data-opcion="papel">
+                    <img src="pedrapapeltesoiraslagartospock/tesoiras.png" alt="Tijeras" data-opcion="tesoiras">
+                    <img src="pedrapapeltesoiraslagartospock/lagarto.png" alt="Lagarto" data-opcion="lagarto">
+                    <div class="opcion-sola">
+                        <img src="pedrapapeltesoiraslagartospock/spock.png" alt="Spock" data-opcion="spock">
+                    </div>
+                </div>
+                <p class="seleccion">Selección: <span id="seleccion1">Ninguna</span></p>
+            </div>
+            
+            <!-- Botón Jugar Centrado -->
+            <button id="botonJugar">JUGAR</button>
+            
+            <!-- Jugador 2 -->
+            <div class="jugador" id="jugador2">
+                <h2>Jugador 2</h2>
+                <div class="opciones">
+                    <img src="pedrapapeltesoiraslagartospock/pedra.png" alt="Piedra" data-opcion="pedra">
+                    <img src="pedrapapeltesoiraslagartospock/papel.png" alt="Papel" data-opcion="papel">
+                    <img src="pedrapapeltesoiraslagartospock/tesoiras.png" alt="Tijeras" data-opcion="tesoiras">
+                    <img src="pedrapapeltesoiraslagartospock/lagarto.png" alt="Lagarto" data-opcion="lagarto">
+                    <div class="opcion-sola">
+                        <img src="pedrapapeltesoiraslagartospock/spock.png" alt="Spock" data-opcion="spock">
+                    </div>
+                </div>
+                <p class="seleccion">Selección: <span id="seleccion2">Ninguna</span></p>
+            </div>
+        </div>
+        
+        <div id="resultado" class="resultado">
+            <h2>Resultado</h2>
+            <p id="textoResultado">Selecciona las opciones y pulsa "Jugar"</p>
+            <p id="explicacion"></p>
+        </div>
+    </div>
+
+    <script src="PPTLS.js"></script>
+</body>
+</html>
