@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empareja</title>
+    <link rel="stylesheet" href="Empareja.css">
+</head>
+<body>
+    <h1>Empareja Frases e Imágenes</h1>
+    
+    <div class="puntuacion">Puntuación: <span id="puntos">0</span></div>
+    
+    <div class="contenedor-juego">
+        <div class="seccion">
+            <h2>Imágenes</h2>
+            <div class="cartas-container" id="imagenes-container"></div>
+        </div>
+        
+        <div class="seccion">
+            <h2>Frases</h2>
+            <div class="cartas-container" id="frases-container"></div>
+        </div>
+    </div>
+    
+    <div id="mensaje" class="mensaje" style="display: none;"></div>
+    
+    <button id="botonReiniciar">Reiniciar Juego</button>
+    <script src="Empareja.js"></script>
+</body>
+</html>
