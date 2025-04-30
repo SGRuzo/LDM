@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanzador de Dados</title>
+    
+    <!-- Fuente de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="dados1.css">
+    
+</head>
+
+<body>
+    <div class="contenedor-principal">
+        <h1>Lanzador de Dados</h1>
+        
+        <!-- Paso 1: Entrada para el número de dados -->
+        <div class="controles">
+            <label for="numeroDados">Número de dados:</label>
+            <input type="number" id="numeroDados" min="1" max="10" value="1">
+            <button id="btnLanzar">Lanzar Dados</button>
+        </div>
+        
+        <!-- Paso 2: Área donde se mostrarán los dados -->
+        <div id="areaDados" class="area-dados"></div>
+        
+        <!-- Paso 3: Área para mostrar la suma -->
+        <div id="resultadoSuma" class="resultado-suma">Suma: 0</div>
+    </div>
+
+    <!-- Archivo JavaScript -->
+    <script src="dados1.js"></script>
+</body>
+
+</html>
